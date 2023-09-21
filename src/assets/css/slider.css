@@ -1,0 +1,61 @@
+/* CSS */
+/* Tùy chỉnh kiểu dáng cho nút Previous */
+.slick-prev {
+    position: absolute;
+    top:45%;
+    /* background-color: #007bff; Màu nền */
+    color: #c19b9b; /* Màu chữ */
+    border: none; /* Loại bỏ viền */
+    border-radius: 50%; /* Bo góc để làm cho nút tròn */
+    padding: 30px; /* Kích thước nút */
+ /* Khoảng cách giữa nút và slide */
+    cursor: pointer; /* Con trỏ chỉ vào nút */
+    left: -5%;
+    /* border: #007bff solid ; */
+    transform: translate(0, -50%);
+  }
+  
+  /* Ẩn nút Previous khi không cần thiết */
+  .slick-prev[aria-disabled="true"] {
+    display:block!important;
+  }
+  .slick-prev:before {
+    content: "<";
+    color: red;
+    font-size: 30px;
+  }
+  
+  .slick-next:before {
+    content: ">";
+    color: red;
+    font-size: 30px;
+  }
+  .slick-dots{
+    position: absolute;
+    bottom: 0!important;
+  }
+  /* .slick-list {
+    height:800px;
+ } */
+
+ 
+  /* .slick-list img{
+    height:800px;
+ } */
+ /* .single-slider{
+  height: 500px !important;
+ }
+  */
+  .resultsContent {
+    position: relative; /* Đặt vị trí tương đối cho container của danh sách sản phẩm */
+  }
+  
+  .item-ult {
+    display: flex;
+    align-items: center;
+    position: relative; /* Đặt vị trí tương đối cho mỗi sản phẩm */
+    z-index: 1; /* Đặt z-index mặc định để sản phẩm không che phủ lên các sản phẩm khác */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi */
+    margin-bottom: 10px; /* Khoảng cách giữa các sản phẩm */
+  }
+  
